@@ -31,7 +31,7 @@ env:
 jobs:
   build-for-macOS-arm64:
     name: build-for-macOS-arm64
-    runs-on: macos-latest-large
+    runs-on: [self-hosted, macOS]
     steps:
       - name: Export GitHub Actions cache environment variables
         uses: actions/github-script@v6
